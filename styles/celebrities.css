@@ -1,0 +1,119 @@
+.celebrities-section {
+    padding: 40px 20px;
+    background: #4d4d5d;
+    margin-top: 20px;
+}
+
+.celebrities-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.celebrities-section .highlight-rev {
+    text-align: center;
+    color: #8b8b8b;
+    margin-bottom: 30px;
+}
+
+.celebrities-slider {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.celebrities-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0 20px 0;
+    flex-wrap: wrap;
+}
+
+.celebrity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    flex: 0 0 auto;
+}
+
+.celebrity-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    display: block;
+    margin: 0 auto;
+}
+
+.celebrity-info {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.celebrity-name {
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.celebrity-name:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.celebrity-title {
+    font-size: 0.98em;
+    color: #8cc5e6;
+    margin-top: 4px;
+}
+
+.slider-arrow {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .celebrities-section {
+        padding: 20px 10px;
+    }
+    
+    .celebrities-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .celebrities-slider {
+        overflow: visible;
+        padding: 0 20px;
+    }
+    
+    .celebrities-container {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .celebrity-card {
+        min-width: 280px;
+        margin: 0;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .celebrity-image {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    
+    .celebrity-info {
+        width: 100%;
+        padding: 0 10px;
+    }
+} 
